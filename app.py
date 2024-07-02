@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify  #(html is jsonifyed!!)
 
 app = Flask(__name__)
 
@@ -35,8 +35,8 @@ def shrini():
                            company_name="Shrini's")  #attribute
 
 
-#route 2
-@app.route("/jobs")
+#route 2(api_route)
+@app.route("/api/jobs")
 def list_jobs():
     return jsonify(JOBS)  #api called json
 
