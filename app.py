@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify  #(html is jsonifyed!!)
 
-app = Flask(__name__)
+app = Flask(
+    __name__)  #flask variable "app" is used further while deploying over cloud
 
 JOBS = [{
     'id': 1,
